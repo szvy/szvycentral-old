@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games - Szvy Central</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=PT+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #222;
+      color: #4CAF50;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      border-bottom: 2px solid #4CAF50;
+      text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #logo {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    #searchBar {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #4CAF50;
+      border-radius: 4px;
+      margin-left: 10px;
+      background-color: black;
+      color: white;
+    }
+
+    #searchButton {
+      padding: 8px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #searchButton:hover {
+      background-color: #45a049;
+    }
+
+    .content-container {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .row {
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 -5px; /* Adjust the margin to create space between games */
+    }
+
+    .placeholder-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .placeholder-image {
+      width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+
+    .hyperlink-container {
+      font-family: 'PT Mono', monospace;
+      font-size: 18px;
+      color: #4CAF50;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: color 0.3s;
+    }
+
+    .hyperlink-container:hover {
+      color: #45a049;
+    }
+
+    footer {
+      background-color: #222;
+      color: #4CAF50;
+      padding: 10px;
+      text-align: left;
+      font-size: 14px;
+      border-top: 2px solid #4CAF50;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .close-button {
+      position: relative;
+      top: 0px;
+      right: 5px; /* Adjust to your preferred value */
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      color: red; /* Make it red */
+      background-color: white; /* Add a white background */
+      padding: 1px 5px; /* Add padding for better visibility */
+      border-radius: 3px; /* Optional: Add border radius for a rounded look */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Assuming your logo is an image with the id "logo" -->
+    <div id="logo-container">
+      <a href="index.html">
+        <img id="logo" src="logo.jpeg" alt="Logo">
+      </a>
+    </div>
+    Games
+    <input type="text" id="searchBar" placeholder="Search...">
+    <button id="searchButton" onclick="searchGames()">Search</button>
+  </header>
+
+<body>
+    <div class="content-container">
+      <!-- New Row 0 (Placeholder Row) -->
+      <div class="row">
+        <div class="placeholder-container">
+          <a href="game-pages/fortnite.html">
+            <img src="../game-pics/fortnite.png" alt="Fortnite" class="placeholder-image">
+          </a>
+          <a href="game-pages/fortnite.html" class="hyperlink-container">
+            Fortnite
+          </a>
+        </div>
+        <div class="placeholder-container">
+          <a href="game-pages/roblox-main.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_Logo_2022.jpg" alt="Roblox" class="placeholder-image">
+          </a>
+          <a href="game-pages/roblox-main.html" class="hyperlink-container">
+            Roblox
+          </a>
+        </div>
+
+        <div class="placeholder-container">
+          <a href="game-pages/cod-mobile-main.html">
+            <img src="https://iconpusher.com/icon/1286/20211125" alt="Call of Duty" class="placeholder-image">
+          </a>
+          <a href="game-pages/cod-mobile-main.html" class="hyperlink-container">
+            Call Of Duty
+          </a>
+        </div>
+
+        <div class="placeholder-container">
+          <a href="game-pages/stumbleguys-main.html">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Geometry_Dash_Logo.PNG/250px-Geometry_Dash_Logo.PNG" alt="Geometry Dash" class="placeholder-image">
+          </a>
+          <a href="game-pages/stumbleguys-main.html" class="hyperlink-container">
+            Geometry Dash
+          </a>
+        </div>
+      </div>
+  <div class="content-container">
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="placeholder-container">
+        <a href="game-pages/subway-surfers.html">
+          <img src="https://play-lh.googleusercontent.com/RxkRzr__LkRttN1r5Zfh2BMzaG7NKf7iL8yj8f1TKIfwNSuRn29zxGh4b1vbEmsNJjPJ" alt="Subway Surfers" class="placeholder-image">
+        </a>
+        <a href="game-pages/subway-surfers.html" class="hyperlink-container">
+          Subway Surfers
+        </a>
+      </div>
+
+      <div class="placeholder-container">
+        <a href="game-pages/among-us.html">
+          <img src="https://play-lh.googleusercontent.com/8ddL1kuoNUB5vUvgDVjYY3_6HwQcrg1K2fd_R8soD-e2QYj8fT9cfhfh3G0hnSruLKec" alt="Among Us" class="placeholder-image">
+        </a>
+        <a href="game-pages/among-us.html" class="hyperlink-container">
+          Among Us
+        </a>
+      </div>
+
+      <div class="placeholder-container">
+        <a href="game-pages/2048.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/2048_logo.svg/800px-2048_logo.svg.png" alt="2048" class="placeholder-image">
+        </a>
+        <a href="game-pages/2048.html" class="hyperlink-container">
+          2048
+        </a>
+      </div>
+
+      <div class="placeholder-container">
+        <a href="/game-pages/cookie-clicker.html">
+          <img src="https://play-lh.googleusercontent.com/Z1MOuuiD05ZN5LkVmMEvKF0mqAc-FknaQ2j8s4dZiO-LSPQX4EEA3RVJdlQEtxe96ok" alt="Cookie Clicker" class="placeholder-image">
+        </a>
+        <a href="/game-pages/cookie-clicker.html" class="hyperlink-container">
+          Cookie Clicker
+        </a>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+      <div class="placeholder-container">
+        <a href="/game-pages/bitlife.html">
+          <img src="https://play-lh.googleusercontent.com/fUM-UyywXxjC8soxAZdIlxJrlRRXmql8wkE426SHzft4lJycSKVd2jCYQQX1BEG9Xw" alt="Bitlife" class="placeholder-image">
+        </a>
+        <a href="/game-pages/bitlife.html" class="hyperlink-container">
+          Bitlife
+        </a>
+      </div>
+
+      <div class="placeholder-container">
+        <a href="/game-pages/flappy-bird.html">
+          <img src="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/thumbs/360.jpg" alt="Flappy Bird" class="placeholder-image">
+        </a>
+        <a href="new-page6.html" class="hyperlink-container">
+          Flappy Bird
+        </a>
+      </div>
+
+      <div class="placeholder-container">
+        <a href="game-pages/minecraft.html">
+          <img src="https://play-lh.googleusercontent.com/VSwHQjcAttxsLE47RuS4PqpC4LT7lCoSjE7Hx5AW_yCxtDvcnsHHvm5CTuL5BPN-uRTP" alt="Minecraft" class="placeholder-image">
+        </a>
+        <a href="game-pages/minecraft.html" class="hyperlink-container">
+          Minecraft
+        </a>
+      </div>
+
+      <div class="placeholder-container">
+        <a href="game-pages/krunker.html">
+          <img src="https://play-lh.googleusercontent.com/YiIdFPGRikQVMAcT8Bg5MiYRgi9YHwsFfP5RsfBcpwKqsl_y3AWqbJ8rhJ0TnLIsdg" alt="Krunker" class="placeholder-image">
+        </a>
+        <a href="game-pages/krunker.html" class="hyperlink-container">
+          Krunker
+        </a>
+      </div>
+    </div>
+
+    <!-- New Row 3 -->
+    <div class="row">
+      <div class="new-placeholder-container">
+        <a href="game-pages/paper-io-2.html">
+          <img src="https://play-lh.googleusercontent.com/KxcjUrs8S75iOPnKBR2b-s7eGtqbREwLgzttVxaM9Znl5ZxsDCl6qEZHny4rBkMeYA=w240-h480-rw" alt="Paper.io 2" class="placeholder-image">
+        </a>
+        <a href="game-pages/paper-io-2.html" class="hyperlink-container">
+          Paper.io 2
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/slope.html">
+          <img src="https://i.ytimg.com/vi/UnNnC1zOacg/maxresdefault.jpg" alt="Slope" class="placeholder-image">
+        </a>
+        <a href="game-pages/slope.html" class="hyperlink-container">
+          Slope
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/superhot.html">
+          <img src="https://assets-global.viveport.com/vr_developer_published_assets/author/1d50caf0-abcb-43e4-8401-373b0782f419/publish/icon_v1528459653.jpg" alt="Superhot" class="placeholder-image">
+        </a>
+        <a href="game-pages/superhot.html" class="hyperlink-container">
+         Superhot
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/cluster-rush.html">
+          <img src="https://lh3.googleusercontent.com/MgBKVpD0VEN77l-OXiHLTbudiLfwXskSaDpMJNRqBLNNHpfuOovWlVNDA8xY4aH6rvVa3Q9ZetCdhfvWV6GC4BYu=w640-h400-e365-rj-sc0x00ffffff" alt="Cluster Rush" class="placeholder-image">
+        </a>
+        <a href="game-pages/cluster-rush.html" class="hyperlink-container">
+          Cluster Rush
+        </a>
+      </div>
+    </div>
+
+    <!-- New Row 4 -->
+    <div class="row">
+      <div class="new-placeholder-container">
+        <a href="game-pages/fnf.html">
+          <img src="https://thumbnails.pcgamingwiki.com/f/fd/Friday_Night_Funkin%27_Logo.gif/300px-Friday_Night_Funkin%27_Logo.gif" alt="Friday Night Funkin'" class="placeholder-image">
+        </a>
+        <a href="game-pages/fnf.html" class="hyperlink-container">
+          FNF
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/retro-bowl.html">
+          <img src="https://cdn-1.webcatalog.io/catalog/poki-retro-bowl/poki-retro-bowl-icon-filled-256.png?v=1674454238752" alt="Retro Bowl" class="placeholder-image">
+        </a>
+        <a href="game-pages/retro-bowl.html" class="hyperlink-container">
+          Retro Bowl
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/crossy-road.html">
+          <img src="https://play-lh.googleusercontent.com/2yH_JCxn7D9FttXZViPhmvIEDfRhio5qdLdWJLxcIfh8PjIkVeBgt_Gj7q21dIRp97g" alt="Crossy Road" class="placeholder-image">
+        </a>
+        <a href="game-pages/crossy-road.html" class="hyperlink-container">
+          Crossy Road
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/1v1-lol.html">
+          <img src="https://geometrydash-free.com/data/image/game/1v1-LOL.png" alt="1v1.lol" class="placeholder-image">
+        </a>
+        <a href="game-pages/1v1-lol.html" class="hyperlink-container">
+          1v1.lol
+        </a>
+      </div>
+    </div>
+
+    <!-- New Row 5 -->
+    <div class="row">
+      <div class="new-placeholder-container">
+        <a href="game-pages/stickman-hook.html">
+          <img src="https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/99e090d154caf30f3625df7e456d5984.png" alt="Stickman Hook" class="placeholder-image">
+        </a>
+        <a href="game-pages/stickman-hook.html" class="hyperlink-container">
+          Stickman Hook
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/fnaf.html">
+          <img src="https://images.squarespace-cdn.com/content/v1/5616ac17e4b018d366f57f53/1624787491193-6P8EP4L2CLVFX5055Y6Q/256+LOGO+BLANK.png" alt="Five Nights At Freddy's" class="placeholder-image">
+        </a>
+        <a href="game-pages/fnaf.html" class="hyperlink-container">
+          FNAF
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/fnaf-2.html">
+          <img src="https://assets1.ignimgs.com/2020/02/04/five-nights-at-freddys-2---button-2020-1580781479013.jpg" alt="Five Night's At Freddy's 2" class="placeholder-image">
+        </a>
+        <a href="game-pages/fnaf-2.html" class="hyperlink-container">
+          FNAF 2
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/smash-karts.html">
+          <img src="https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/9c9e529b14731be871b07b89660bbc2a.png" alt="Smash Karts" class="placeholder-image">
+        </a>
+        <a href="game-pages/smash-karts.html" class="hyperlink-container">
+          Smash Karts
+        </a>
+      </div>
+    </div>
+
+    <!-- New Row 6 -->
+    <div class="row">
+      <div class="new-placeholder-container">
+        <a href="game-pages/sm64.html">
+          <img src="https://www.giantbomb.com/a/uploads/scale_medium/1/12541/3312461-sq_n64_supermario64.jpg" alt="Placeholder 17" class="placeholder-image">
+        </a>
+        <a href="game-pages/sm64" class="hyperlink-container">
+          SM64
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/mk-ss.html">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Super_Circuit.jpg/220px-Super_Circuit.jpg" alt="Mario Kart Super Circuit" class="placeholder-image">
+        </a>
+        <a href="game-pages/mk-ss.html" class="hyperlink-container">
+          MK:SC
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/smb3.html">
+          <img src="https://professionalmorondotcom.files.wordpress.com/2015/05/Super-Mario-Bros-3.jpg?w=701&h=573" alt="Super Mario Bros 3" class="placeholder-image">
+        </a>
+        <a href="game-pages/smb3.html" class="hyperlink-container">
+          SMB 3
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/smb.html">
+          <img src="https://sm.ign.com/t/ign_ap/cover/v/vs-super-m/vs-super-mario-bros_b1tu.128.jpg" alt="Super Mario Bros" class="placeholder-image">
+        </a>
+        <a href="game-pages/smb.html" class="hyperlink-container">
+          SMB
+        </a>
+      </div>
+    </div>
+
+    <!-- New bloody row that wasnt here originally -->
+      <div class="row">
+      <div class="new-placeholder-container">
+        <a href="game-pages/tetris.html">
+          <img src="../game-pics/tetris.png" alt="Tetris" class="placeholder-image">
+        </a>
+        <a href="game-pages/tetris.html" class="hyperlink-container">
+          Tetris
+        </a>
+      </div>
+    </div>
+
+    <!-- New Row 7 -->
+    <div class="row">
+      <div class="new-placeholder-container">
+        <a href="game-pages/ovo.html">
+          <img src="../game-pics/OvO-Game.jpg" alt="OvO" class="placeholder-image">
+        </a>
+        <a href="game-pages/ovo.html" class="hyperlink-container">
+          OvO
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/bad-time-sim.html">
+          <img src="../game-pics/badtimesim.jpg" alt="Bad Time Simulator" class="placeholder-image">
+        </a>
+        <a href="game-pages/bad-time-sim.html" class="hyperlink-container">
+          Bad Time Sim
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/driftboss.html">
+          <img src="https://m.media-amazon.com/images/I/71Rvyj1gI1L.png" alt="Driftboss" class="placeholder-image">
+        </a>
+        <a href="game-pages/driftboss.html" class="hyperlink-container">
+          Driftboss
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/fbwg.html">
+          <img src="../game-pics/fireboywatergirl.jpg" alt="Fireboy and Watergirl" class="placeholder-image">
+        </a>
+        <a href="game-pages/fbwg.html" class="hyperlink-container">
+          FG & WG
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="new-placeholder-container">
+        <a href="game-pages/ducklife.html">
+          <img src="../game-pics/duck-life.png" alt="Ducklife" class="placeholder-image">
+        </a>
+        <a href="game-pages/ducklife.html" class="hyperlink-container">
+          Ducklife
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/ducklife2.html">
+          <img src="../game-pics/ducklife2.png" alt="Ducklife 2" class="placeholder-image">
+        </a>
+        <a href="game-pages/ducklife2.html" class="hyperlink-container">
+          Ducklife 2
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/ducklife3.html">
+          <img src="../game-pics/ducklife3.png" alt="Ducklife 3" class="placeholder-image">
+        </a>
+        <a href="game-pages/ducklife3.html" class="hyperlink-container">
+          Ducklife 3
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/ducklife4.html">
+          <img src="../game-pics/ducklife4.png" alt="DuckLife 4" class="placeholder-image">
+        </a>
+        <a href="game-pages/ducklife4.html" class="hyperlink-container">
+          Ducklife 4
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="new-placeholder-container">
+        <a href="game-pages/riddleschool.html">
+          <img src="../game-pics/riddleschool.png" alt="Ducklife 2" class="placeholder-image">
+        </a>
+        <a href="game-pages/riddleschool.html" class="hyperlink-container">
+          Riddleschool
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/riddleschool2.html">
+          <img src="../game-pics/riddleschool2.png" alt="Ducklife 2" class="placeholder-image">
+        </a>
+        <a href="game-pages/riddleschool2.html" class="hyperlink-container">
+          Riddleschool 2
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/riddleschool3.html">
+          <img src="../game-pics/riddleschool3.png" alt="Ducklife 3" class="placeholder-image">
+        </a>
+        <a href="game-pages/riddleschool3.html" class="hyperlink-container">
+          Riddleschool 3
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/riddleschool5.html">
+          <img src="../game-pics/riddleschool5.png" alt="DuckLife 4" class="placeholder-image">
+        </a>
+        <a href="game-pages/riddleschool5.html" class="hyperlink-container">
+          Riddleschool 5
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="new-placeholder-container">
+        <a href="game-pages/riddletransfer.html">
+          <img src="../game-pics/riddletransfer.png" alt="Ducklife 2" class="placeholder-image">
+        </a>
+        <a href="game-pages/riddletransfer.html" class="hyperlink-container">
+          Riddletransfer
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/riddletransfer2.html">
+          <img src="../game-pics/riddletransfer2.png" alt="Ducklife 2" class="placeholder-image">
+        </a>
+        <a href="game-pages/riddletransfer2.html" class="hyperlink-container">
+          RT2
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/btb.html">
+          <img src="../game-pics/breakingthebank.png" alt="Breaking The Bank" class="placeholder-image">
+        </a>
+        <a href="game-pages/btb.html" class="hyperlink-container">
+          BtB
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/stealingthediamond.html">
+          <img src="../game-pics/stealingthediamond.png" alt="DuckLife 4" class="placeholder-image">
+        </a>
+        <a href="game-pages/stealingthediamond.html" class="hyperlink-container">
+          StD
+        </a>
+      </div>
+    </div>
+    <!-- New Row ??? -->
+    <div class="row">
+      <div class="new-placeholder-container">
+        <a href="game-pages/happywheels.html">
+          <img src="../game-pics/happywheels.png" alt="Happy Wheels" class="placeholder-image">
+        </a>
+        <a href="game-pages/happywheels.html" class="hyperlink-container">
+          Happywheels
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/papas-pizzeria.html">
+          <img src="../game-pics/papas-pizzeria.png" alt="Ducklife 2" class="placeholder-image">
+        </a>
+        <a href="game-pages/papas-pizzeria.html" class="hyperlink-container">
+          Papa's Pizza
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/papas-burgeria.html">
+          <img src="../game-pics/papas-burgeria.png" alt="Ducklife 3" class="placeholder-image">
+        </a>
+        <a href="game-pages/papas-burgeria.html" class="hyperlink-container">
+          Papa's Burger
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/papas-pancakeria.html">
+          <img src="../game-pics/papas-pancakeria.png" alt="DuckLife 4" class="placeholder-image">
+        </a>
+        <a href="game-pages/papas-pancakeria.html" class="hyperlink-container">
+          Papa's Pancake
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="new-placeholder-container">
+        <a href="game-pages/cupcakeria.html">
+          <img src="../game-pics/cupcakeria.png" alt="Happy Wheels" class="placeholder-image">
+        </a>
+        <a href="game-pages/cupcakeria.html" class="hyperlink-container">
+          Papa's Cupcake
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/hotdogeria.html">
+          <img src="../game-pics/hotdogeria.png" alt="Ducklife 2" class="placeholder-image">
+        </a>
+        <a href="game-pages/hotdogeria.html" class="hyperlink-container">
+          Papa's Hotdog
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/wingeria.html">
+          <img src="../game-pics/wingeria.png" alt="Ducklife 3" class="placeholder-image">
+        </a>
+        <a href="game-pages/wingeria.html" class="hyperlink-container">
+          Papa's Wings
+        </a>
+      </div>
+
+      <div class="new-placeholder-container">
+        <a href="game-pages/donuteria.html">
+          <img src="../game-pics/donuteria.png" alt="DuckLife 4" class="placeholder-image">
+        </a>
+        <a href="game-pages/donuteria.html" class="hyperlink-container">
+          Papa's Donut
+        </a>
+      </div>
+    </div>
+      <footer id="myFooter">
+        <span class="close-button" onclick="hideFooter()">X</span>
+        <span>All games featured on this site are the property of their respective owners. Szvy Central is not affiliated with any game developers or publishers. Any trademarks used on this site are the property of their respective owners.</span>
+        <span>For inquiries, please contact <a href="mailto:unblocked247buisness@gmail.com">unblocked247buisness@gmail.com</a>.</span>
+      </footer>
+
+      <script>
+        function hideFooter() {
+          document.getElementById('myFooter').style.display = 'none';
+        }
+
+        function searchGames() {
+          var input, filter, rows, placeholders, i, txtValue;
+          input = document.getElementById("searchBar");
+          filter = input.value.toUpperCase();
+          rows = document.getElementsByClassName("row");
+
+          for (i = 0; i < rows.length; i++) {
+            placeholders = rows[i].getElementsByClassName("hyperlink-container");
+            for (var j = 0; j < placeholders.length; j++) {
+              txtValue = placeholders[j].textContent || placeholders[j].innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                rows[i].style.display = "";
+                break;
+              } else {
+                rows[i].style.display = "none";
+              }
+            }
+          }
+        }
+      </script>
+      </body>
+
+      </html>

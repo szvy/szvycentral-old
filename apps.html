@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apps - Szvy Central</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=PT+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #222;
+      color: #4CAF50;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      border-bottom: 2px solid #4CAF50;
+      text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content-container {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .row {
+      margin-bottom: 20px;
+    }
+
+    .placeholder-image {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .placeholder-container {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .hyperlink-container {
+      font-family: 'PT Mono', monospace;
+      font-size: 18px;
+      color: #4CAF50;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      transition: color 0.3s;
+    }
+
+    .hyperlink-container:hover {
+      color: #45a049;
+    }
+
+    #searchBar {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #4CAF50;
+      border-radius: 4px;
+      margin-left: 10px;
+    }
+
+    #searchButton {
+      padding: 8px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #searchButton:hover {
+      background-color: #45a049;
+    }
+
+      #game-iframe {
+      width: 100%;
+      height: 720px; /* Adjust the height as needed */
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content-container">
+    <header>
+      <div id="logo-container" style="margin-right: 20px;">
+        <a href="index.html">
+          <img id="logo" src="logo.jpeg" alt="Logo" style="border-radius: 50%; width: 50px; height: 50px; margin-right: 20px;">
+        </a>
+      </div>
+      Apps
+    </header>
+  </div>
+
+<iframe src="https://subtoszvy-in-the-stellar.vercel.app/~" style="border:0px #ffffff none;" name="apps" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="720px" width="100%" allowfullscreen></iframe>
+   
+</body>
+
+</html>
