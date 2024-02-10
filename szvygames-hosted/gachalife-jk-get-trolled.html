@@ -24,7 +24,7 @@
     z-index: -1000;
     background-size: cover;
   }
-  #content {
+  #initial {
     position: relative;
     z-index: 1;
   }
@@ -35,7 +35,7 @@
 </style>
 </head>
 <body>
-  <div id="content">
+  <div id="inital">
     <h1>Gacha Life Proxy</h1>
     <p>This is a simple proxy that allows you to play Gacha Life</p>
     <button id="checkButton" onclick="checkIP()">Launch Proxy</button>
@@ -49,7 +49,7 @@
   <script>
       function checkIP() {
         const checkButton = document.getElementById('checkButton');
-        checkButton.style.display = 'none'; // Hide the button
+        initial.style.display = 'none'; // Hide the button
 
         fetch('https://wtfismyip.com/json')
           .then(response => response.json())
