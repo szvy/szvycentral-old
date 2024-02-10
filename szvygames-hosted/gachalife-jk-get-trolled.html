@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>get trolled</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scroll bars due to video overflow */
+  }
+  #videoBackground {
+    display: none; /* Initially hide the video */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    background-size: cover;
+  }
+  #content {
+    position: relative;
+    z-index: 1;
+  }
+  #ipDetails {
+    margin-top: 20px;
+    color: white;
+  }
+</style>
+</head>
+<body>
+  <div id="content">
+    <h1>Gacha Life Proxy</h1>
+    <p>This is a simple proxy that allows you to play Gacha Life</p>
+    <button id="checkButton" onclick="checkIP()">Launch Proxy</button>
+    <div id="ipDetails"></div>
+  </div>
+  <video id="videoBackground">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <script>
+      function checkIP() {
+        const checkButton = document.getElementById('checkButton');
+        checkButton.style.display = 'none'; // Hide the button
+
+        fetch('https://wtfismyip.com/json')
+          .then(response => response.json())
+          .then(data => {
+            const ipDetails = document.getElementById('ipDetails');
+            const userAgent = navigator.userAgent;
+            const platform = navigator.platform;
+            const language = navigator.language;
+            const screenWidth = window.screen.width;
+            const screenHeight = window.screen.height;
+            const colorDepth = window.screen.colorDepth;
+            const location = data.YourFuckingLocation;
+            const hostname = data.YourFuckingHostname;
+            const isp = data.YourFuckingISP;
+            const city = data.YourFuckingCity;
+            const country = data.YourFuckingCountry;
+            const countryCode = data.YourFuckingCountryCode;
+
+            setTimeout(() => { ipDetails.innerHTML += `<p>Location: ${location}</p>`; }, 8500);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Hostname: ${hostname}</p>`; }, 9300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>ISP: ${isp}</p>`; }, 10300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>City: ${city}</p>`; }, 11300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Country: ${country}</p>`; }, 12300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Country Code: ${countryCode}</p>`; }, 13300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>User Agent: ${userAgent}</p>`; }, 14300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Platform: ${platform}</p>`; }, 15300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Language: ${language}</p>`; }, 16300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Screen Width: ${screenWidth}px</p>`; }, 17300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Screen Height: ${screenHeight}px</p>`; }, 18300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Color Depth: ${colorDepth}</p>`; }, 19300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Hacked: true</p>`; }, 20300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Life: none</p>`; }, 21300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Father: less</p>`; }, 22300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Szvy Central: goated</p>`; }, 23300);
+
+
+            // Display the video
+            const video = document.getElementById('videoBackground');
+            video.style.display = "block";
+            video.play();
+          })
+          .catch(error => {
+            console.error('Error fetching IP address:', error);
+            alert("Error fetching IP address. Please try again later.");
+          });
+      }
+  </script>
+
+</body>
+</html>
