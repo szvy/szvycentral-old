@@ -131,9 +131,10 @@
   </div>
   <script>
   function openGame() {
-  var win = window.open('https://www.instructure.com/canvas'); // Open the desired URL
-  win.onload = function() { // Wait for the window to load before creating the iframe
-    var url = win.location.href; // Get the current URL
+  var win = window.open('about:blank'); // Open about:blank initially
+  win.onload = function() {
+    win.location.href = 'https://www.instructure.com/canvas'; // Update the URL to https://www.instructure.com/canvas
+    var url = win.location.href; // Get the updated URL
     var iframe = win.document.createElement('iframe');
     iframe.style.width = "100%";
     iframe.style.height = "100%";
@@ -142,7 +143,7 @@
     win.document.body.appendChild(iframe);
   };
 }
-  </script>
+</script>
   
   <div class="stat-counter">
     <script type="text/javascript" src="https://www.stat-counter.org/count/cgir"></script><br>
