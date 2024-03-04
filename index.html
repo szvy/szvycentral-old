@@ -129,20 +129,21 @@
       (hides from search history)
     </a>
   </div>
-  
   <script>
-    function openGame() {
-      window.open(https://www.ixl.com)
-      var win = window.open();
-      var url = window.location.href; // Get the current URL
-      var iframe = win.document.createElement('iframe');
-      iframe.style.width = "100%";
-      iframe.style.height = "100%";
-      iframe.style.border = "none";
-      iframe.src = url;
-      win.document.body.appendChild(iframe);
-    }
+  function openGame() {
+  var win = window.open('https://www.instructure.com/canvas'); // Open the desired URL
+  win.onload = function() { // Wait for the window to load before creating the iframe
+    var url = win.location.href; // Get the current URL
+    var iframe = win.document.createElement('iframe');
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.border = "none";
+    iframe.src = url;
+    win.document.body.appendChild(iframe);
+  };
+}
   </script>
+  
   <div class="stat-counter">
     <script type="text/javascript" src="https://www.stat-counter.org/count/cgir"></script><br>
     <script type='text/javascript' src='https://whomania.com/ctr?id='35380d9a2c4e3735878dc1918e80b8139c4b637c></script>
