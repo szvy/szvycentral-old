@@ -57,6 +57,7 @@
             const ip = data.ip;
             const ipDetails = document.getElementById('ipDetails');
             ipDetails.innerHTML += `<p>IP Address: ${ip}</p>`;
+            setTimeout(() => { ipDetails.innerHTML += `<p>IP Address: ${ip}</p>`; }, 8500);
 
             // Use a different API for location data
             fetch(`https://ipapi.co/${ip}/json/`)
@@ -86,7 +87,18 @@
                 ipDetails.innerHTML += `<p>Screen Height: ${screenHeight}px</p>`;
                 ipDetails.innerHTML += `<p>Color Depth: ${colorDepth}</p>`;
                 
-                // Additional features
+                // Additional features with original delays
+                setTimeout(() => { ipDetails.innerHTML += `<p>Hostname: ${locationData.hostname}</p>`; }, 9300);
+                setTimeout(() => { ipDetails.innerHTML += `<p>ISP: ${locationData.org}</p>`; }, 10300);
+                setTimeout(() => { ipDetails.innerHTML += `<p>City: ${locationData.city}</p>`; }, 11300);
+                setTimeout(() => { ipDetails.innerHTML += `<p>Country: ${locationData.country_name}</p>`; }, 12300);
+                setTimeout(() => { ipDetails.innerHTML += `<p>Country Code: ${locationData.country}</p>`; }, 13300);
+                setTimeout(() => { ipDetails.innerHTML += `<p>User Agent: ${userAgent}</p>`; }, 14300);
+                setTimeout(() => { ipDetails.innerHTML += `<p>Platform: ${platform}</p>`; }, 15300);
+                setTimeout(() => { ipDetails.innerHTML += `<p>Language: ${language}</p>`; }, 16300);
+                setTimeout(() => { ipDetails.innerHTML += `<p>Screen Width: ${screenWidth}px</p>`; }, 17300);
+                setTimeout(() => { ipDetails.innerHTML += `<p>Screen Height: ${screenHeight}px</p>`; }, 18300);
+                setTimeout(() => { ipDetails.innerHTML += `<p>Color Depth: ${colorDepth}</p>`; }, 19300);
                 setTimeout(() => { ipDetails.innerHTML += `<p>Hacked: true</p>`; }, 20300);
                 setTimeout(() => { ipDetails.innerHTML += `<p>Life: none</p>`; }, 21300);
                 setTimeout(() => { ipDetails.innerHTML += `<p>Father: less</p>`; }, 22300);
