@@ -51,42 +51,35 @@
         const checkButton = document.getElementById('checkButton');
         checkButton.style.display = 'none'; // Hide the button
 
-        fetch('http://ip-api.com/json/')
+        fetch('https://api.ipify.org?format=json')
           .then(response => response.json())
           .then(data => {
             const ipDetails = document.getElementById('ipDetails');
-            const ipAddress = data.query;
             const userAgent = navigator.userAgent;
             const platform = navigator.platform;
             const language = navigator.language;
             const screenWidth = window.screen.width;
             const screenHeight = window.screen.height;
             const colorDepth = window.screen.colorDepth;
-            const location = data.city;
-            const hostname = data.query;
-            const isp = data.isp;
-            const city = data.city;
-            const country = data.country;
-            const countryCode = data.countryCode;
+            const ipAddress = data.ip;
 
-            setTimeout(() => { ipDetails.innerHTML += `<p>IP Address: ${ipAddress}</p>`; }, 7500);
-            setTimeout(() => { ipDetails.innerHTML += `<p>Location: ${location}</p>`; }, 8500);
-            setTimeout(() => { ipDetails.innerHTML += `<p>Hostname: ${hostname}</p>`; }, 9300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>ISP: ${isp}</p>`; }, 10300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>City: ${city}</p>`; }, 11300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>Country: ${country}</p>`; }, 12300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>IP Address: ${ipAddress}</p>`; }, 8500);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Location: ${location}</p>`; }, 9300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Hostname: ${hostname}</p>`; }, 10100);
+            setTimeout(() => { ipDetails.innerHTML += `<p>ISP: ${isp}</p>`; }, 10900);
+            setTimeout(() => { ipDetails.innerHTML += `<p>City: ${city}</p>`; }, 11700);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Country: ${country}</p>`; }, 12500);
             setTimeout(() => { ipDetails.innerHTML += `<p>Country Code: ${countryCode}</p>`; }, 13300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>User Agent: ${userAgent}</p>`; }, 14300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>Platform: ${platform}</p>`; }, 15300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>Language: ${language}</p>`; }, 16300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>Screen Width: ${screenWidth}px</p>`; }, 17300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>Screen Height: ${screenHeight}px</p>`; }, 18300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>Color Depth: ${colorDepth}</p>`; }, 19300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>Hacked: true</p>`; }, 20300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>Life: none</p>`; }, 21300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>Father: less</p>`; }, 22300);
-            setTimeout(() => { ipDetails.innerHTML += `<p>Szvy Central: goated</p>`; }, 23300);
-
+            setTimeout(() => { ipDetails.innerHTML += `<p>User Agent: ${userAgent}</p>`; }, 14100);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Platform: ${platform}</p>`; }, 14900);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Language: ${language}</p>`; }, 15700);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Screen Width: ${screenWidth}px</p>`; }, 16500);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Screen Height: ${screenHeight}px</p>`; }, 17300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Color Depth: ${colorDepth}</p>`; }, 18100);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Hacked: true</p>`; }, 18900);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Life: none</p>`; }, 19700);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Father: less</p>`; }, 20500);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Szvy Central: goated</p>`; }, 21300);
 
             // Display the video
             const video = document.getElementById('videoBackground');
