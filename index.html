@@ -130,19 +130,20 @@
     </a>
   </div>
   <script>
-  function openGame() {
-  var win = window.open('about:blank'); // Open about:blank initially
-  win.onload = function() {
-    win.location.href = 'https://www.instructure.com/canvas'; // Update the URL to https://www.instructure.com/canvas
-    var url = win.location.href; // Get the updated URL
-    var iframe = win.document.createElement('iframe');
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.border = "none";
-    iframe.src = url;
-    win.document.body.appendChild(iframe);
-  };
+function openGame() {
+    // Open window for https://szvycentral.vercel.app
+    var win1 = window.open();
+    var iframe1 = win1.document.createElement('iframe');
+    iframe1.style.width = "100%";
+    iframe1.style.height = "100%";
+    iframe1.style.border = "none";
+    iframe1.src = 'https://szvycentral.vercel.app';
+    win1.document.body.appendChild(iframe1);
+
+    // Open window for https://www.instructure.com/canvas
+    var win2 = window.open('https://www.instructure.com/canvas');
 }
+
 </script>
   
   <div class="stat-counter">
