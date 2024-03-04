@@ -51,73 +51,52 @@
         const checkButton = document.getElementById('checkButton');
         checkButton.style.display = 'none'; // Hide the button
 
-        fetch('https://api.ipify.org?format=json')
+        fetch('http://ip-api.com/json/')
           .then(response => response.json())
           .then(data => {
-            const ip = data.ip;
             const ipDetails = document.getElementById('ipDetails');
-            ipDetails.innerHTML += `<p>IP Address: ${ip}</p>`;
-            setTimeout(() => { 
-              // Use a different API for location data
-              fetch(`https://ipapi.co/${ip}/json/`)
-                .then(response => response.json())
-                .then(locationData => {
-                  const location = locationData.city;
-                  const country = locationData.country_name;
+            const ipAddress = data.query;
+            const userAgent = navigator.userAgent;
+            const platform = navigator.platform;
+            const language = navigator.language;
+            const screenWidth = window.screen.width;
+            const screenHeight = window.screen.height;
+            const colorDepth = window.screen.colorDepth;
+            const location = data.city;
+            const hostname = data.query;
+            const isp = data.isp;
+            const city = data.city;
+            const country = data.country;
+            const countryCode = data.countryCode;
 
-                  ipDetails.innerHTML += `<p>Location: ${location}, ${country}</p>`;
-                  ipDetails.innerHTML += `<p>ISP: ${locationData.org}</p>`;
-                  ipDetails.innerHTML += `<p>Latitude: ${locationData.latitude}</p>`;
-                  ipDetails.innerHTML += `<p>Longitude: ${locationData.longitude}</p>`;
-                  ipDetails.innerHTML += `<p>Timezone: ${locationData.timezone}</p>`;
+            setTimeout(() => { ipDetails.innerHTML += `<p>IP Address: ${ipAddress}</p>`; }, 7500);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Location: ${location}</p>`; }, 8500);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Hostname: ${hostname}</p>`; }, 9300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>ISP: ${isp}</p>`; }, 10300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>City: ${city}</p>`; }, 11300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Country: ${country}</p>`; }, 12300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Country Code: ${countryCode}</p>`; }, 13300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>User Agent: ${userAgent}</p>`; }, 14300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Platform: ${platform}</p>`; }, 15300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Language: ${language}</p>`; }, 16300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Screen Width: ${screenWidth}px</p>`; }, 17300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Screen Height: ${screenHeight}px</p>`; }, 18300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Color Depth: ${colorDepth}</p>`; }, 19300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Hacked: true</p>`; }, 20300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Life: none</p>`; }, 21300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Father: less</p>`; }, 22300);
+            setTimeout(() => { ipDetails.innerHTML += `<p>Szvy Central: goated</p>`; }, 23300);
 
-                  // Other user details
-                  const userAgent = navigator.userAgent;
-                  const platform = navigator.platform;
-                  const language = navigator.language;
-                  const screenWidth = window.screen.width;
-                  const screenHeight = window.screen.height;
-                  const colorDepth = window.screen.colorDepth;
 
-                  ipDetails.innerHTML += `<p>User Agent: ${userAgent}</p>`;
-                  ipDetails.innerHTML += `<p>Platform: ${platform}</p>`;
-                  ipDetails.innerHTML += `<p>Language: ${language}</p>`;
-                  ipDetails.innerHTML += `<p>Screen Width: ${screenWidth}px</p>`;
-                  ipDetails.innerHTML += `<p>Screen Height: ${screenHeight}px</p>`;
-                  ipDetails.innerHTML += `<p>Color Depth: ${colorDepth}</p>`;
-                  
-                  // Additional features with original delays
-                  setTimeout(() => { ipDetails.innerHTML += `<p>Hostname: ${locationData.hostname}</p>`; }, 8000);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>ISP: ${locationData.org}</p>`; }, 9300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>City: ${locationData.city}</p>`; }, 10300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>Country: ${locationData.country_name}</p>`; }, 11300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>Country Code: ${locationData.country}</p>`; }, 12300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>User Agent: ${userAgent}</p>`; }, 13300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>Platform: ${platform}</p>`; }, 14300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>Language: ${language}</p>`; }, 15300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>Screen Width: ${screenWidth}px</p>`; }, 16300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>Screen Height: ${screenHeight}px</p>`; }, 17300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>Color Depth: ${colorDepth}</p>`; }, 18300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>Hacked: true</p>`; }, 19300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>Life: none</p>`; }, 20300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>Father: less</p>`; }, 21300);
-                  setTimeout(() => { ipDetails.innerHTML += `<p>Szvy Central: goated</p>`; }, 22300);
-                })
-                .catch(error => {
-                  console.error('Error fetching location:', error);
-                  ipDetails.innerHTML += `<p>Error fetching location.</p>`;
-                });
-            }, 8500);
+            // Display the video
+            const video = document.getElementById('videoBackground');
+            video.style.display = "block";
+            video.play();
           })
           .catch(error => {
             console.error('Error fetching IP address:', error);
             alert("Error fetching IP address. Please try again later.");
           });
-
-        // Display the video
-        const video = document.getElementById('videoBackground');
-        video.style.display = "block";
-        video.play();
       }
   </script>
 
