@@ -71,43 +71,36 @@
 </head>
 <body>
 
-<header>
-  Cookie Clicker
-</header>
+  <header>
+    Cookie Clicker
+  </header>
 
-<div class="button-container">
-  <button class="fullscreen-button" onclick="toggleFullscreen()">Play</button>
-  <a href="../index.html" class="back-button">Back to Main Page</a>
-</div>
+  <!-- Placeholder Iframe -->
+  <iframe id="game-iframe" src="https://subtoszvy.github.io/cookieclicker/" frameborder="0"></iframe>
 
-<script>
-  var urlObj = new window.URL(window.location.href);
-  var url = "https://subtoszvy.github.io/cookieclicker/"; // Replace with your own link
+  <!-- Button Container -->
+  <div class="button-container">
+    <!-- Fullscreen Button -->
+    <button class="fullscreen-button" onclick="toggleFullscreen()">Fullscreen</button>
 
-  function toggleFullscreen() {
-    if (url) {
-      var win;
+    <!-- Back Button -->
+    <a href="../index.html" class="back-button">Back to Main Page</a>
+  </div>
 
-      if (win) {
-        win.focus();
-      } else {
-        win = window.open();
-        win.document.body.style.margin = '0';
-        win.document.body.style.height = '100vh';
-        var iframe = win.document.createElement('iframe');
-        iframe.style.border = 'none';
-        iframe.style.width = '100%';
-        iframe.style.height = '100%';
-        iframe.style.margin = '0';
-        iframe.src = url;
-        win.document.body.appendChild(iframe);
+  <script>
+    function toggleFullscreen() {
+      const iframe = document.getElementById('game-iframe');
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.mozRequestFullScreen) {
+        iframe.mozRequestFullScreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
       }
-      
-      document.querySelector('button').style.background = 'grey'; // Corrected typo
-      document.querySelector('button').innerHTML = "Already Open";
     }
-  }
-</script>
+  </script>
 
 </body>
 </html>
