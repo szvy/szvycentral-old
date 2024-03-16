@@ -76,38 +76,9 @@
 </header>
 
 <div class="button-container">
-  <button class="fullscreen-button" onclick="toggleFullscreen()">Play</button>
+  <a href="https://subtoszvy.github.io/cookieclicker/" target="_blank" class="fullscreen-button">Play</a>
   <a href="../index.html" class="back-button">Back to Main Page</a>
 </div>
-
-<script>
-  var urlObj = new window.URL(window.location.href);
-  var url = "https://subtoszvy.github.io/cookieclicker/"; // Replace with your own link
-
-  function toggleFullscreen() {
-    if (url) {
-      var win;
-
-      if (win) {
-        win.focus();
-      } else {
-        win = window.open();
-        win.document.body.style.margin = '0';
-        win.document.body.style.height = '100vh';
-        var iframe = win.document.createElement('iframe');
-        iframe.style.border = 'none';
-        iframe.style.width = '100%';
-        iframe.style.height = '100%';
-        iframe.style.margin = '0';
-        iframe.src = url;
-        win.document.body.appendChild(iframe);
-      }
-      
-      document.querySelector('button').style.background = 'grey'; // Corrected typo
-      document.querySelector('button').innerHTML = "Already Open";
-    }
-  }
-</script>
 
 </body>
 </html>
