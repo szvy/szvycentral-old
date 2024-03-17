@@ -131,17 +131,13 @@
   </div>
   <script>
 function openGame() {
-    // Open window for original website
     var originalWindow = window.open();
     var iframe = originalWindow.document.createElement('iframe');
     iframe.style.width = "100%";
     iframe.style.height = "100%";
     iframe.style.border = "none";
-    iframe.src = window.location.href; // Set src to current website URL
+    iframe.src = window.location.href;
     originalWindow.document.body.appendChild(iframe);
-
-    // Redirect original window to new URL
-    window.location.href = 'https://www.instructure.com/canvas';
 }
 
 }
