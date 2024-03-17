@@ -131,13 +131,19 @@
   </div>
   <script>
 function openGame() {
-    var originalWindow = window.open();
-    var iframe = originalWindow.document.createElement('iframe');
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.border = "none";
-    iframe.src = window.location.href;
-    originalWindow.document.body.appendChild(iframe);
+    // Open window for current website
+    var win1 = window.open();
+    var iframe1 = win1.document.createElement('iframe');
+    iframe1.style.width = "100%";
+    iframe1.style.height = "100%";
+    iframe1.style.border = "none";
+    iframe1.src = window.location.href; // Set src to current website URL
+    win1.document.body.appendChild(iframe1);
+
+    // Open window for https://www.instructure.com/canvas
+    var win2 = window.open('https://www.instructure.com/canvas');
+}
+
 }
 
 }
