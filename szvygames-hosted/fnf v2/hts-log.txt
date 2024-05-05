@@ -1,0 +1,49 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 04 May 2024 22:06:04 at https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html -O1 "C:\My Web Sites\fnf v2" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/5by7.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/5by7.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/5by7_b.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/5by7_b.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/DS-DIGI.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/DS-DIGIB.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/DS-DIGII.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/DS-DIGIT.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-Black.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-Black.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-Bold.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-Bold.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-ExtraBold.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-ExtraBold.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-ExtraLight.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-ExtraLight.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-Medium.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-Medium.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-Regular.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-Regular.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-SemiBold.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Inconsolata-SemiBold.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/pixel.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Quantico-Bold.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Quantico-Bold.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Quantico-BoldItalic.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Quantico-BoldItalic.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Quantico-Italic.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Quantico-Italic.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Quantico-Regular.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/Quantico-Regular.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/vcr.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/assets/fonts/vcr.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/flixel/fonts/nokiafc22.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/flixel/fonts/nokiafc22.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/flixel/fonts/monsterrat.eot? (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/flixel/fonts/monsterrat.svg (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+22:06:35	Error: 	"Not Found" (404) at link https://w8.snokido.com/games/html5/friday-night-funkin/0300/friday-night-funkin (from https://w8.snokido.com/games/html5/friday-night-funkin/0300/index.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 31 seconds : 81 links scanned, 42 files written (17033710 bytes overall) [5975398 bytes received at 192754 bytes/sec], 15134705 bytes transferred using HTTP compression in 59 files, ratio 26%, 40.5 requests per connection
+(38 errors, 0 warnings, 0 messages)
