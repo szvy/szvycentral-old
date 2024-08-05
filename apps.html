@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9H6FJQVZMY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9H6FJQVZMY');
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apps - Szvy Central</title>
+  <title>Szvy Central</title>
   <link rel="icon" type="image/x-icon" href="https://fluffy-disco-os-sd-sd.netlify.app/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=PT+Mono&display=swap" rel="stylesheet">
   <style>
@@ -21,7 +29,6 @@
       background-color: #222;
       color: #4CAF50;
       padding: 20px;
-      text-align: center;
       font-size: 28px;
       border-bottom: 2px solid #4CAF50;
       text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
@@ -37,161 +44,117 @@
       margin-right: 10px;
     }
 
-    #searchBar {
-      padding: 8px;
-      font-size: 16px;
-      border: 1px solid #4CAF50;
-      border-radius: 4px;
-      margin-left: 10px;
-      background-color: black;
-      color: white;
-    }
-
-    #searchButton {
-      padding: 8px;
-      font-size: 16px;
-      background-color: #4CAF50;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    #searchButton:hover {
-      background-color: #45a049;
-    }
-
-    .content-container {
+    .button-container {
       text-align: center;
-      margin: 20px auto;
-    }
-
-    .row {
-      margin-bottom: 20px; /* Add margin between rows */
-      display: flex;
-      justify-content: center; /* Center the buttons */
-      align-items: center;
-    }
-
-    .placeholder-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin: 20px 10px;
+      width: calc(100% / 3 - 20px);
+      box-sizing: border-box;
     }
 
     .button {
-      padding: 10px 20px;
+      font-family: 'PT Mono', monospace;
+      padding: 15px 30px;
       font-size: 18px;
       background-color: #4CAF50;
-      color: #fff;
+      color: #111;
       border: none;
-      border-radius: 4px;
+      border-radius: 8px;
       cursor: pointer;
-      margin: 0 5px; /* Adjust the margin to control the spacing between buttons */
-      transition: all 0.3s ease;
+      transition: background-color 0.3s, transform 0.3s;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+      text-decoration: none;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
     }
 
     .button:hover {
       background-color: #45a049;
-      transform: scale(1.05);
+      transform: scale(1.1);
     }
 
-    footer {
-      background-color: #222;
-      color: #4CAF50;
-      padding: 10px;
-      text-align: left;
-      font-size: 14px;
-      border-top: 2px solid #4CAF50;
+    .stat-counter {
+      text-align: center;
       position: fixed;
-      bottom: 0;
+      bottom: 10px;
       width: 100%;
     }
 
-    .close-button {
-      position: relative;
-      top: 0px;
-      right: 5px; /* Adjust to your preferred value */
-      cursor: pointer;
-      font-size: 18px;
-      font-weight: bold;
-      color: red; /* Make it red */
-      background-color: white; /* Add a white background */
-      padding: 1px 5px; /* Add padding for better visibility */
-      border-radius: 3px; /* Optional: Add border radius for a rounded look */
+    .motd {
+      font-family: 'PT Mono', monospace;
+      background-color: #222;
+      color: #f0f0f0;
+      padding: 20px;
+      font-size: 20px;
+      border-bottom: 2px solid #4CAF50;
+      text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <!-- Assuming your logo is an image with the id "logo" -->
-    <div id="logo-container">
-      <a href="index.html">
-        <img id="logo" src="logo.jpeg" alt="Logo">
-      </a>
-    </div>
-    Apps
-    <input type="text" id="searchBar" placeholder="Search...">
-    <button id="searchButton" onclick="searchGames()">Search</button>
-  </header>
 
-  <body>
-    <div class="content-container">
-      <!-- New Row 0 (Placeholder Row) -->
-      <div class="row">
-        <div class="placeholder-container">
-          <button class="button" onclick="window.location.href='app-pages/discord.html'">Discord</button>
-        </div>
-        <div class="placeholder-container">
-          <button class="button" onclick="window.location.href='app-pages/tdw.html'">Thirty Dollar Website</button>
-        </div>
-        <div class="placeholder-container">
-          <button class="button" onclick="window.location.href='app-pages/win11.html'">Windows 11</button>
-        </div>
-        <div class="placeholder-container">
-          <button class="button" onclick="window.location.href='app-pages/youtube.html'">YouTube</button>
-        </div>
-        <div class="placeholder-container">
-          <button class="button" onclick="window.location.href='app-pages/tiktok.html'">TikTok</button>
-        </div>
-        <div class="placeholder-container">
-          <button class="button" onclick="window.location.href='app-pages/fluid.html'">WebGL Fluids</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="placeholder-container">
-          <button class="button" onclick="window.location.href='app-pages/chatgpt.html'">ChatGPT</button>
-        </div>
-        <div class="placeholder-container">
-          <button class="button" onclick="window.location.href='app-pages/soundcloud.html'">SoundCloud</button>
-        </div>
-      
-    <script>
-      function hideFooter() {
-          document.getElementById('myFooter').style.display = 'none';
-        }
+<header>
+  <a>
+    <img id="logo" src="logo.jpeg" alt="Logo">
+  </a>
+  Szvy Central
+</header>
 
-        function searchGames() {
-          var input, filter, rows, placeholders, i, txtValue;
-          input = document.getElementById("searchBar");
-          filter = input.value.toUpperCase();
-          rows = document.getElementsByClassName("row");
+<div class="motd">
+  szvy central has offically closed, szvy central v2 out now
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+  <div class="button-container">
+    <a href="https://play.szvy.win" class="button">
+      szvy central v2
+    </a>
+  </div>
+</div>
 
-          for (i = 0; i < rows.length; i++) {
-            placeholders = rows[i].getElementsByClassName("hyperlink-container");
-            for (var j = 0; j < placeholders.length; j++) {
-              txtValue = placeholders[j].textContent || placeholders[j].innerText;
-              if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                rows[i].style.display = "";
-                break;
-              } else {
-                rows[i].style.display = "none";
-              }
-            }
+  <div class="stat-counter">
+  <script type="text/javascript" src="https://www.stat-counter.org/count/cgir"></script><br>
+  <script type='text/javascript' src='https://whomania.com/ctr?id='35380d9a2c4e3735878dc1918e80b8139c4b637c></script>
+</div>
+
+
+<script>
+  var urlObj = new window.URL(window.location.href);
+  var url = window.location;
+
+  if (url) {
+    var win;
+
+    document.getElementById('openScriptButton').onclick = function() {
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+        window.location.replace("https://canvas.instructure.com/");
+
+        var interval = setInterval(function() {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
           }
-        }
-    </script>
-  </body>
-
+        }, 500);
+      }
+    };
+  }
+</script>
+</body>
 </html>
