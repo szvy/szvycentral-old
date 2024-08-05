@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9H6FJQVZMY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9H6FJQVZMY');
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Partners - Szvy Central</title>
+  <title>Szvy Central</title>
   <link rel="icon" type="image/x-icon" href="https://fluffy-disco-os-sd-sd.netlify.app/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=PT+Mono&display=swap" rel="stylesheet">
   <style>
@@ -21,236 +29,132 @@
       background-color: #222;
       color: #4CAF50;
       padding: 20px;
-      text-align: center;
       font-size: 28px;
       border-bottom: 2px solid #4CAF50;
       text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
       display: flex;
-      flex-direction: row;
       align-items: center;
       justify-content: center;
-    }
-
-    #logo-container {
-      margin-right: 10px;
     }
 
     #logo {
       border-radius: 50%;
       width: 50px;
       height: 50px;
+      margin-right: 10px;
     }
 
-    .content-container {
+    .button-container {
       text-align: center;
-      margin: 20px auto;
+      margin: 20px 10px;
+      width: calc(100% / 3 - 20px);
+      box-sizing: border-box;
     }
 
-    .row {
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .placeholder-image {
-      width: 150px;
-      height: 150px;
-      margin-bottom: 10px;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .placeholder-container {
-      display: inline-block;
-      margin: 0 10px;
-    }
-
-    .hyperlink-container {
+    .button {
       font-family: 'PT Mono', monospace;
+      padding: 15px 30px;
       font-size: 18px;
-      color: #4CAF50;
+      background-color: #4CAF50;
+      color: #111;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
       text-decoration: none;
       display: block;
-      margin-top: 10px;
-      transition: color 0.3s;
+      margin: 0 auto;
+      margin-bottom: 10px;
     }
 
-    .hyperlink-container:hover {
-      color: #45a049;
-    }
-
-    #searchBar {
-      padding: 8px;
-      font-size: 16px;
-      border: 1px solid #4CAF50;
-      border-radius: 4px;
-      margin-left: 10px;
-    }
-
-    #searchButton {
-      padding: 8px;
-      font-size: 16px;
-      background-color: #4CAF50;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    #searchButton:hover {
+    .button:hover {
       background-color: #45a049;
+      transform: scale(1.1);
+    }
+
+    .stat-counter {
+      text-align: center;
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+    }
+
+    .motd {
+      font-family: 'PT Mono', monospace;
+      background-color: #222;
+      color: #f0f0f0;
+      padding: 20px;
+      font-size: 20px;
+      border-bottom: 2px solid #4CAF50;
+      text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   </style>
 </head>
-
 <body>
-  <div class="content-container">
-    <header>
-      <div id="logo-container">
-        <a href="index.html">
-          <img id="logo" src="logo.jpeg" alt="Logo">
-        </a>
-      </div>
-      <span>Partners</span>
-      <input type="text" id="searchBar" placeholder="Search..." style="background-color: black; color: white;">
-      <button id="searchButton" onclick="searchGames()">Search</button>
-    </header>
+
+<header>
+  <a>
+    <img id="logo" src="logo.jpeg" alt="Logo">
+  </a>
+  Szvy Central
+</header>
+
+<div class="motd">
+  szvy central has offically closed, szvy central v2 out now
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+  <div class="button-container">
+    <a href="https://play.szvy.win" class="button">
+      szvy central v2
+    </a>
   </div>
+</div>
 
-  <div class="content-container">
-    <!-- New Row 0 (Placeholder Row) -->
-    <div class="row">
-      <div class="placeholder-container">
-        <a href="https://sites.google.com/view/bananagames3">
-          <img src="https://i.ibb.co/vXnNFZK/image-2023-12-14-235646841.png" alt="Banana Games" class="placeholder-image">
-        </a>
-        <a href="https://sites.google.com/view/bananagames3" class="hyperlink-container">
-          Banana Games
-        </a>
-      </div>
+  <div class="stat-counter">
+  <script type="text/javascript" src="https://www.stat-counter.org/count/cgir"></script><br>
+  <script type='text/javascript' src='https://whomania.com/ctr?id='35380d9a2c4e3735878dc1918e80b8139c4b637c></script>
+</div>
 
-      <div class="placeholder-container">
-        <a href="https://sites.google.com/view/game-hub-unbl0cked/home?authuser=0">
-          <img src="https://i.ibb.co/jLgVDLH/image-2023-12-14-235805454.png" alt="Gamehub" class="placeholder-image">
-        </a>
-        <a href="https://sites.google.com/view/game-hub-unbl0cked/home?authuser=0" class="hyperlink-container">
-          Gamehub
-        </a>
-      </div>
 
-      <div class="placeholder-container">
-        <a href="https://ehab.helooo.com">
-          <img src="https://www.ehabgames.com/EhabGames.jpg" alt="Ehab Games" class="placeholder-image">
-        </a>
-        <a href="https://www.ehabgames.com" class="hyperlink-container">
-          Ehab Games
-        </a>
-      </div>
-     <div class="placeholder-container">
-        <a href="https://sites.google.com/view/pxlar/home">
-          <img src="https://i.ibb.co/n1dR0bx/image-2024-03-25-223334204.png" alt="Pxlarized" class="placeholder-image">
-        </a>
-        <a href="https://sites.google.com/view/pxlar/home" class="hyperlink-container">
-          Pxlarized
-        </a>
-      </div>
-      <body>
-  </div>
-    <div class="row">
-      <div class="placeholder-container">
-        <a href="https://bruny.pages.dev">
-          <img src="https://bruny.pages.dev/imgs/brunysixlgif.gif" alt="Brunnysixl" class="placeholder-image">
-        </a>
-        <a href="https://brunysixls.pages.dev" class="hyperlink-container">
-          Brunys IXL
-        </a>
-      </div>
-      <div class="placeholder-container">
-        <a href="https://sites.google.com/view/lludos/home?authuser=0">
-          <img src="https://i.ibb.co/xqGwxn4/image-2024-03-25-222729942.png" alt="Ludos" class="placeholder-image">
-        </a>
-        <a href="https://sites.google.com/view/lludos/home?authuser=0" class="hyperlink-container">
-          Ludos
-        </a>
-      </div>
-    <div class="placeholder-container">
-        <a href="https://sites.google.com/view/learn-sci/home">
-          <img src="https://i.ibb.co/StzZj3r/image-2024-04-28-182007403.png" alt="LearnSci" class="placeholder-image">
-        </a>
-        <a href="https://sites.google.com/view/learn-sci/home" class="hyperlink-container">
-          Learn Sci
-        </a>
-      </div>
-       <div class="placeholder-container">
-        <a href="https://infamyunblockedv4fr.vercel.app">
-          <img src="https://i.ibb.co/BZg3mQn/image-2024-04-20-000356085.png" alt="Infamy Unblocked" class="placeholder-image">
-        </a>
-        <a href="https://infamyunblockedv4fr.vercel.app" class="hyperlink-container">
-          Infamy Unblocked
-        </a>
-      </div>
-    </div>
-      <div class="row">
-      <div class="placeholder-container">
-        <a href="https://outerworld-proxy.pages.dev/static/">
-          <img src="https://outerworld-proxy.pages.dev/static/logo.gif" alt="Outerworld" class="placeholder-image">
-        </a>
-        <a href="https://outerworld-proxy.pages.dev/static/" class="hyperlink-container">
-          Outerworld
-        </a>
-      </div>
-    <div class="placeholder-container">
-        <a href="https://frogiesarcade-u7gj.onrender.com">
-          <img src="https://frogiesarcade-u7gj.onrender.com/images/logo.gif" alt="Frogie's Arcade" class="placeholder-image">
-        </a>
-        <a href="https://frogiesarcade-u7gj.onrender.com" class="hyperlink-container">
-          Frogies Arcade
-        </a>
-      </div>
-        <div class="placeholder-container">
-        <a href="https://meximath.github.io">
-          <img src="https://i.ibb.co/KVHhg92/image-6.png" alt="Mexi's Unblocked Gàmes" class="placeholder-image">
-        </a>
-        <a href="https://meximath.github.io" class="hyperlink-container">
-          MexiMath
-        </a>
-      </div>
-        <div class="placeholder-container">
-        <a href="https://rubyarcade.netlify.app">
-          <img src="https://rubyarcade.netlify.app/media/icons/ruby.png" alt="Ruby Arcade" class="placeholder-image">
-        </a>
-        <a href="https://rubyarcade.netlify.app" class="hyperlink-container">
-          Ruby Arcade
-        </a>
-      </div>
-      </div>
+<script>
+  var urlObj = new window.URL(window.location.href);
+  var url = window.location;
 
-      <!-- Add more partner placeholders as needed -->
+  if (url) {
+    var win;
 
-    </div>
-  </div>
+    document.getElementById('openScriptButton').onclick = function() {
+      if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+        window.location.replace("https://canvas.instructure.com/");
 
-  <script>
-    function searchGames() {
-      var input, filter, rows, placeholders, i, txtValue;
-      input = document.getElementById("searchBar");
-      filter = input.value.toUpperCase();
-      rows = document.getElementsByClassName("row");
-
-      for (i = 0; i < rows.length; i++) {
-        placeholders = rows[i].getElementsByClassName("hyperlink-container");
-        for (var j = 0; j < placeholders.length; j++) {
-          txtValue = placeholders[j].textContent || placeholders[j].innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            rows[i].style.display = "";
-            break;
-          } else {
-            rows[i].style.display = "none";
+        var interval = setInterval(function() {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
           }
-        }
+        }, 500);
       }
-    }
-  </script>
+    };
+  }
+</script>
 </body>
-
 </html>
